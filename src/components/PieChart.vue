@@ -1,12 +1,12 @@
 <template>
-  <div>
-    hellow world!
-  </div>
+    <div>
+        PieCharts
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld'
+  name: 'PieCharts'
 }
 </script>
 

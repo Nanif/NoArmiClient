@@ -1,14 +1,12 @@
 <template>
-    <div>dkfkdjfkdjfkdjk
-    <hello-world></hello-world>
+    <div>
+        454545
     </div>
 </template>
 
 <script>
-import HelloWorld from 'HelloWorld'
 export default {
-  name: 'Dashboard',
-  components: { 'hello-world': HelloWorld }
+  name: 'Dashboard'
 }
 </script>
 

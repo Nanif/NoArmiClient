@@ -1,12 +1,18 @@
 <template>
     <div>
-        PieCharts
+        <index>
+
+        </index>
     </div>
 </template>
 
 <script>
+import index from '../Dashboard/Index'
 export default {
-  name: 'PieCharts'
+  name: 'HelloWorld',
+  components: {
+    index
+  }
 }
 </script>
 

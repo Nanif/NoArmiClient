@@ -23,63 +23,236 @@
 </template>
 
 <script>
+
     export default {
         name: 'Dashboard',
-        data() {
+        data: function () {
             return {
-                students: [
+                studentsList: [
                     {
-                        tz: 207145244,
-                        firstName: 'נעמי',
-                        lastName: 'פישביין',
-                        birthDate: '07/05/1998',
-                        address: 'רשבם 22 בני ברק',
-                        phone: '50411215',
-                    },
+                        name: 'חורף פ',
+                        list: [
+                            {
+                                tz: 207145244,
+                                firstName: 'נעמי',
+                                lastName: 'פישביין',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 22 בני ברק',
+                                phone: '50411215',
+                            },
 
-                    {
-                        tz: 207145244,
-                        firstName: 'נעמי',
-                        lastName: 'פישביין',
-                        birthDate: '07/05/1998',
-                        address: 'רשבם 22 בני ברק',
-                        phone: '50411215',
+                            {
+                                tz: 207145244,
+                                firstName: 'נעמי',
+                                lastName: 'פישביין',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 22 בני ברק',
+                                phone: '50411215',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'נעמי',
+                                lastName: 'פישביין',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 22 בני ברק',
+                                phone: '50411215',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'נעמי',
+                                lastName: 'פישביין',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 22 בני ברק',
+                                phone: '50411215',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'נעמי',
+                                lastName: 'פישביין',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 22 בני ברק',
+                                phone: '50411215',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'נעמי',
+                                lastName: 'פישביין',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 22 בני ברק',
+                                phone: '50411215',
+                            },
+                        ]
                     },
                     {
-                        tz: 207145244,
-                        firstName: 'נעמי',
-                        lastName: 'פישביין',
-                        birthDate: '07/05/1998',
-                        address: 'רשבם 22 בני ברק',
-                        phone: '50411215',
-                    },
-                    {
-                        tz: 207145244,
-                        firstName: 'נעמי',
-                        lastName: 'פישביין',
-                        birthDate: '07/05/1998',
-                        address: 'רשבם 22 בני ברק',
-                        phone: '50411215',
-                    },
-                    {
-                        tz: 207145244,
-                        firstName: 'נעמי',
-                        lastName: 'פישביין',
-                        birthDate: '07/05/1998',
-                        address: 'רשבם 22 בני ברק',
-                        phone: '50411215',
-                    },
-                    {
-                        tz: 207145244,
-                        firstName: 'נעמי',
-                        lastName: 'פישביין',
-                        birthDate: '07/05/1998',
-                        address: 'רשבם 22 בני ברק',
-                        phone: '50411215',
-                    },
+                        name: 'קיץ פ',
+                        list: [
+                            {
+                                tz: 207145244,
+                                firstName: 'יהודית',
+                                lastName: 'קובר',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 15 בני ברק',
+                                phone: '0504785412',
+                            },
 
+                            {
+                                tz: 207145244,
+                                firstName: 'יהודית',
+                                lastName: 'קובר',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 15 בני ברק',
+                                phone: '0504785412',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'יהודית',
+                                lastName: 'קובר',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 15 בני ברק',
+                                phone: '0504785412',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'יהודית',
+                                lastName: 'קובר',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 15 בני ברק',
+                                phone: '0504785412',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'יהודית',
+                                lastName: 'קובר',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 15 בני ברק',
+                                phone: '0504785412',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'יהודית',
+                                lastName: 'קובר',
+                                birthDate: '07/05/1998',
+                                address: 'רשבם 15 בני ברק',
+                                phone: '0504785412',
+                            },
+                        ]
+                    },
+                    {
+                        name: 'סתו פ',
+                        list: [
+                            {
+                                tz: 207145244,
+                                firstName: 'אסתר',
+                                lastName: 'יצחקוב',
+                                birthDate: '07/05/1998',
+                                address: 'וילקומירר 12 בני ברק',
+                                phone: '0548488994',
+                            },
+
+                            {
+                                tz: 207145244,
+                                firstName: 'אסתר',
+                                lastName: 'יצחקוב',
+                                birthDate: '07/05/1998',
+                                address: 'וילקומירר 12 בני ברק',
+                                phone: '0548488994',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'אסתר',
+                                lastName: 'יצחקוב',
+                                birthDate: '07/05/1998',
+                                address: 'וילקומירר 12 בני ברק',
+                                phone: '0548488994',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'אסתר',
+                                lastName: 'יצחקוב',
+                                birthDate: '07/05/1998',
+                                address: 'וילקומירר 12 בני ברק',
+                                phone: '0548488994',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'אסתר',
+                                lastName: 'יצחקוב',
+                                birthDate: '07/05/1998',
+                                address: {
+                                    tz: 207145244,
+                                    firstName: 'אסתר',
+                                    lastName: 'יצחקוב',
+                                    birthDate: '07/05/1998',
+                                    address: 'וילקומירר 12 בני ברק',
+                                    phone: '0548488994',
+                                },
+                            },
+                        ]
+                    },
+                    {
+                        name: 'אביב פ',
+                        list: [
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+                            {
+                                tz: 207145244,
+                                firstName: 'מלכה',
+                                lastName: 'ברוק',
+                                birthDate: '07/05/1998',
+                                address: 'מצליח 10 בני ברק',
+                                phone: '0527603743',
+                            },
+                        ]
+                    }
                 ],
-                studentsFields: [
+              studentsFields: [
                     'ת.ז.',
                     'שם משפחה',
                     'שם פרטי',
@@ -87,7 +260,7 @@
                     'כתובת',
                     'טלפו'
                 ]
-            }
+        }
         }
     }
 </script>

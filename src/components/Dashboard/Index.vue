@@ -8,6 +8,7 @@
             </div>
             <groups></groups>
             <dashboard></dashboard>
+          <side-bar></side-bar>
         </div>
     </div>
 </template>
@@ -16,10 +17,12 @@
     import Dashboard from '../Dashboard/Dashboard'
     import groups from '../Dashboard/Groups'
     import PieChart from '../Dashboard/PieChart'
+    import SideBar from "../Actions/SideBar";
 
     export default {
         name: 'Index.vue',
         components: {
+          SideBar,
             Dashboard,
             PieChart,
             groups

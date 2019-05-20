@@ -4,7 +4,6 @@
             <li :key="index" @click="changeActiveGroup(index)" class="nav-item" v-for="(group,index) in groupsList">
                 <a :class="{'active': group.isActive}" class="nav-link"
                    data-toggle="tab" href="#home" role="tab"><span>{{ group.Displayname }}</span></a>
-
             </li>
         </ul>
     </div>
@@ -19,16 +18,17 @@
                     {
                         Displayname: 'קבוצת חורף',
                         isActive: true
-                    }, {
+                    },
+                    {
                         Displayname: 'קבוצת אביב',
                         isActive: false
-                    }, {
+                    },{
                         Displayname: 'קבוצת סתו',
                         isActive: false
                     }, {
                         Displayname: 'קבוצת קיץ',
                         isActive: false
-                    },
+                    }
                 ]
             }
         },
@@ -52,6 +52,7 @@
         color: #515a62
 
     }
+
     .nav-link {
         border: solid 1px #e4e7ea;
 

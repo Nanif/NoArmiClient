@@ -1,5 +1,5 @@
 <script>
-    /* eslint-disable */
+/* eslint-disable */
 
     import {Pie} from 'vue-chartjs'
 

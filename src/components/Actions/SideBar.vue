@@ -2,7 +2,7 @@
 
   <div id="parentx">
 
-    <vs-button @click="active=!active" color="primary" type="filled">Open Sidebar</vs-button>
+    <vs-button @click="active=!active" color="primary" type="filled">פעולות על הקבוצה</vs-button>
     <vs-sidebar position-right  parent="body" default-index="1"  color="primary" class="sidebarx" spacer v-model="active">
 
       <div class="header-sidebar" >
@@ -14,7 +14,7 @@
 
       <vs-sidebar-item index="1"  position="right" dir="rtl" >
         קביעת תור
-      </vs-sidebar-item>
+          </vs-sidebar-item>
 
       <vs-sidebar-item index="2" position="right" dir="rtl" >
         הונפק
@@ -61,11 +61,11 @@
 </template>
 
 <script>
-  export default {
-    data:()=>({
-      active:false,
-    })
-  }
+export default {
+  data: () => ({
+    active: false
+  })
+}
 </script>
 
 <style lang="scss" scoped>
@@ -77,7 +77,6 @@
     width: 100%;
   }
 
-
   .diving {
     font-size: large;
     font-weight: bold;
@@ -86,7 +85,6 @@
     button {
       margin-left: 10px;
     }
-
 
   .footer-sidebar {
     display: flex;

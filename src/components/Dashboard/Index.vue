@@ -14,20 +14,20 @@
 </template>
 
 <script>
-    import Dashboard from '../Dashboard/Dashboard'
-    import groups from '../Dashboard/Groups'
-    import PieChart from '../Dashboard/PieChart'
-    import SideBar from "../Actions/SideBar";
+import Dashboard from '../Dashboard/Dashboard'
+import groups from '../Dashboard/Groups'
+import PieChart from '../Dashboard/PieChart'
+import SideBar from '../Actions/SideBar'
 
-    export default {
-        name: 'Index.vue',
-        components: {
-          SideBar,
-            Dashboard,
-            PieChart,
-            groups
-        }
-    }
+export default {
+  name: 'Index.vue',
+  components: {
+    SideBar,
+    Dashboard,
+    PieChart,
+    groups
+  }
+}
 </script>
 
 <style lang="scss" scoped>

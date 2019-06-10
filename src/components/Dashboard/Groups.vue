@@ -10,37 +10,37 @@
 </template>
 
 <script>
-    export default {
-        name: "groups",
-        data() {
-            return {
-                groupsList: [
-                    {
-                        Displayname: 'קבוצת חורף',
-                        isActive: true
-                    },
-                    {
-                        Displayname: 'קבוצת אביב',
-                        isActive: false
-                    },{
-                        Displayname: 'קבוצת סתו',
-                        isActive: false
-                    }, {
-                        Displayname: 'קבוצת קיץ',
-                        isActive: false
-                    }
-                ]
-            }
+export default {
+  name: 'groups',
+  data () {
+    return {
+      groupsList: [
+        {
+          Displayname: 'קבוצת חורף',
+          isActive: true
         },
-        methods: {
-            changeActiveGroup(index) {
-                this.groupsList.forEach(group => {
-                    group.isActive = false;
-                });
-                this.groupsList[index].isActive = true;
-            }
+        {
+          Displayname: 'קבוצת אביב',
+          isActive: false
+        }, {
+          Displayname: 'קבוצת סתו',
+          isActive: false
+        }, {
+          Displayname: 'קבוצת קיץ',
+          isActive: false
         }
+      ]
     }
+  },
+  methods: {
+    changeActiveGroup (index) {
+      this.groupsList.forEach(group => {
+        group.isActive = false
+      })
+      this.groupsList[index].isActive = true
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
